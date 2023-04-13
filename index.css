@@ -1,0 +1,24 @@
+
+*{
+    top: 0;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+body{
+    background: rgb(32, 24, 24);
+}
+
+.img{
+    margin-top: -60;
+    width: 50%;
+    margin-left: 330px;
+}
+
+.tit{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font: 30px bold;
+    text-align: center;
+
+}
+
