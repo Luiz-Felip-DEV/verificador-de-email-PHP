@@ -18,24 +18,24 @@ function enviarEmail($emai, $nome){
 
     try {
         //Server settings
-        //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+        $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
         $mail->isSMTP();                                             //Send using SMTP
         $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = 'multimidiaconexoes@gmail.com';                     //SMTP username
-        $mail->Password   = 'vdvjiztziykssdbz';                               //SMTP password
+        $mail->Username   = 'softnow09@gmail.com';                     //SMTP username
+        $mail->Password   = 'xscvjnnvprhsnpnj';                               //SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
         $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
         //Recipients
-        $mail->setFrom('multimidiaconexoes@gmail.com', 'Multi Midia');
+        $mail->setFrom('softnow09@gmail.com', 'Soft Now');
         $mail->addAddress($emai, $nome);     //Add a recipient        
-        $mail->addReplyTo('multimidiaconexoes@gmail.com', 'Multi Midia');
+        $mail->addReplyTo('softnow09@gmail.com', 'Soft Now');
         
 
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
-        $mail->Subject = 'Mensagem de confirmacao de email, do site Comunicacoes Multi Midia ';
+        $mail->Subject = 'Mensagem de confirmacao de email';
         $numAleat = gerarCodigo();
 
         $body = "Mensagem de confirmação de email, segue o codigo de confirmação: $numAleat<br><br><br><br>
@@ -77,20 +77,20 @@ function confirmEmail($emai, $nome, $mensag){
           $mail->isSMTP();                                             //Send using SMTP
           $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
           $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-          $mail->Username   = 'multimidiaconexoes@gmail.com';                     //SMTP username
-          $mail->Password   = 'vdvjiztziykssdbz';                               //SMTP password
+          $mail->Username   = 'softnow09@gmail.com';                     //SMTP username
+          $mail->Password   = 'xscvjnnvprhsnpnj';                               //SMTP password
           $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
           $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
   
           //Recipients
-          $mail->setFrom('multimidiaconexoes@gmail.com', 'Multi Midia');
+          $mail->setFrom('softnow09@gmail.com', 'Soft Now');
           $mail->addAddress($emai, $nome);     //Add a recipient        
-          $mail->addReplyTo('multimidiaconexoes@gmail.com', 'Multi Midia');
+          $mail->addReplyTo('softnow09@gmail.com', 'Soft Now');
           
   
           //Content
           $mail->isHTML(true);                                  //Set email format to HTML
-          $mail->Subject = 'Comunicacoes Multi Midia';
+          $mail->Subject = 'Soft Now';
   
           $body = "Email confirmado com sucesso...<br><br><br><br>
           Parabens $nome o email

@@ -1,9 +1,9 @@
 <?php
     require_once('func.php');
-    $mensagem = "ERRO, codigo invalido!";
-    echo '<script>alert("'.$mensagem.'");</script>';
+    $emai = "luizfelipe098@icloud.com";
+    $nome = "Luiz Felipe";
 
-    confirmEmail($email,$nome);
+    enviarEmail($emai,$nome);
 
     
 ?>
